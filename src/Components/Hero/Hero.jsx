@@ -1,3 +1,4 @@
+import profilePhoto from "../../assets/Images/nasir-hero-img.png";
 import logo from "../../assets/Images/nkdatti-logo.png";
 import "./Hero.css";
 
@@ -13,7 +14,7 @@ function Hero() {
           I'm Nasir K. Datti, a front-end developer focused on building
           responsive, accessible, and user-centered web-applications.
         </p>
-        <div>
+        <div className="hero--actions">
           <a href="#projects" className="hero_primary--btn">
             View My Work
           </a>
@@ -22,14 +23,21 @@ function Hero() {
           </a>
         </div>
         <div className="hero_social--media">
-          <a href="#" arial-label="GitHub">GitHub</a>
-          <a href="#" arial-label="LinkedIn">LinkedIn</a>
-          <a href="#" arial-label="Instagram">Instagram</a>
+          <a href="#" arial-label="GitHub">
+            GitHub
+          </a>
+          <a href="#" arial-label="LinkedIn">
+            LinkedIn
+          </a>
+          <a href="#" arial-label="Instagram">
+            Instagram
+          </a>
         </div>
       </div>
       <div className="hero--visual">
-        <div className="hero--glow"></div>
-        <div className="hero--logo">NKD</div>
+        <div className="hero_img--wrapper">
+          <img src={profilePhoto} alt="Nasir K. Datti" className="hero--img" />
+        </div>
       </div>
     </section>
   );
